@@ -1,0 +1,33 @@
+.container {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 10px;
+}
+
+
+.heading-wrapper img{
+  width: 100%;
+}
+
+.concept-txt {
+  float: left;
+  width: 60%;
+  text-align: justify;
+}
+
+.basicInfo-txt {
+  float: right;
+  width: 25%;
+}
+
+.basicInfo-txt li {
+  text-align: left;
+  font-size: 10px;
+  color: #a9a9a9;
+  line-height: 130%;
+}
+
+.clear {
+  clear: left;
+}
