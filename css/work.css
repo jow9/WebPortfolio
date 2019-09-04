@@ -1,11 +1,40 @@
 .container {
-  width: 70%;
+  width: 75%;
   text-align: center;
   margin: 0 auto;
-  padding: 50px 10px;
+  padding: 30px 10px;
+}
+
+h1 {
+  text-align: left;
+  margin: 5px 20px 0px 0px;
+  font-size: 75px;
+}
+
+h2 {
+  text-align: left;
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+h3 {
+  margin: 5px;
+  font-size: 22px;
+}
+
+h4 {
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+p {
+  margin: 0px 5px;
 }
 
 
+/*heading-wrapper*/
 .heading-wrapper img{
   width: 100%;
 }
@@ -14,6 +43,16 @@
   float: left;
   width: 60%;
   text-align: justify;
+}
+
+.concept-txt h1 {
+  display: inline-block;
+  width: auto;
+}
+
+.concept-txt h3 {
+  display: inline-block;
+  width: auto;
 }
 
 .basicInfo-txt {
@@ -30,4 +69,64 @@
 
 .clear {
   clear: left;
+}
+
+
+/*intro-wrapper*/
+.colum {
+  width: 100%;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 0;/*要素同士をぴったりくっつけるための処理、不要な改行を消す*/
+}
+
+
+/*横にレイアウトする*/
+.colum-row img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  width: 45%;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+.colum-row .txt-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+
+/*縦にレイアウトする*/
+.colum-var-childe {
+  display: inline-block;
+  width: 25%;
+  min-width: 120px;
+  max-width: 600px;
+  padding: 5px;
+}
+
+.colum-var img {
+  width: 100%;
+}
+
+.colum-var .txt-wrapper {
+  width: 100%;
+}
+
+/*縦コラムの数に応じて幅を変更*/
+.childeNum-02 .colum-var-childe {
+  width: 50%;
+}
+
+.childeNum-03 .colum-var-childe {
+  width: 33.33%;
+}
+
+.childeNum-04 .colum-var-childe {
+  width: 25%;
 }
