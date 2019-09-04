@@ -1,0 +1,302 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f8ff;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "ヒラギノ丸ゴ ProN", "serif", "YuGothic", "Yu Gothic";
+}
+
+.container {
+  margin: 5px auto;
+  width: 95%;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.container p {
+  font-size: 13px;
+}
+
+li {
+  list-style: none;
+  font-size: 13px;
+}
+
+ul {
+  padding: 0;
+}
+
+
+/*header*/
+header ul {
+  text-align: right;
+  margin: 15px 0 5px 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  padding: 0px 15px;
+  cursor : pointer;
+}
+
+header li:hover {
+  opacity: 0.5;
+}
+
+/*top-wrapper*/
+.top-wrapper .container {
+  padding: 60px 0 80px 0;
+  border-top: solid 5px #2b2b2b;
+}
+
+.title {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title h1 {
+  font-size: 95px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.title h3 {
+  font-size: 22px;
+  letter-spacing: 5px;
+  background-color: #2b2b2b;
+  color: white;
+  margin: 0;
+}
+
+/*works*/
+.work-abs {
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.section-title {
+  font-size: 75px;
+  margin: 10px 0 0 0;
+}
+
+.works {
+  font-size: 0;/*要素同士をぴったりくっつけるための処理、不要な改行を消す*/
+  border: solid 1.5px #2b2b2b;
+}
+
+.work-row {
+  width: 100%;
+  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.work-block {
+  border: solid 1.5px #2b2b2b;
+  margin: 0px;
+  padding: 0px;
+  width: 20%;
+  display: block;
+  /*text-align: left;
+  vertical-align: top;*/
+  flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  flex-grow: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+      flex-grow: 0;
+  align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+        align-self: auto;
+}
+
+
+.blocksize-1 {
+  flex-grow: 1;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.blocksize-2 {
+  flex-grow: 2;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+      flex-grow: 2;
+}
+
+.blocksize-3 {
+  flex-grow: 3;
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
+      flex-grow: 3;
+}
+
+.blocksize-4 {
+  flex-grow: 4;
+    -webkit-box-flex: 4;
+    -ms-flex-positive: 4;
+      flex-grow: 4;
+}
+
+.blocksize-5 {
+  flex-grow: 5;
+    -webkit-box-flex: 5;
+    -ms-flex-positive: 5;
+      flex-grow: 5;
+}
+
+.work {
+  position: relative;
+  width: calc(100% - 10px);/*marginの値だけ引く*/
+  height: calc(100% - 10px);/*marginの値だけ引く*/
+  margin: 5px;
+  text-align: left;
+  cursor : pointer;
+}
+
+.work:hover {
+  opacity: 0.5;
+}
+
+
+.workImg-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+/*画像と文字を横に並べるレイアウト*/
+.layout-row .workImg-wrapper {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+}
+
+.layout-row .work-txt {
+  background-color: #2b2b2b;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/*画像と文字を縦に並べるレイアウト*/
+.layout-var .workImg-wrapper {
+  width: 100%;
+  height: 60%;
+}
+
+.layout-var .work-txt {
+  background-color: #2b2b2b;
+  display: block;
+  color: white;
+  width: 100%;
+  height: 40%;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/*aboutme-wrapper*/
+.aboutme-wrapper {
+  margin: 10px 0;
+  /*background-color: #dcdcdc;*/
+}
+
+.aboutme-wrapper .container {
+  /*background-color: #dcdcdc;*/
+  border-top: solid 5px #2b2b2b;
+  text-align: left;
+  padding: 30px 30px 60px 30px;
+}
+
+.myImg {
+  width: 35%;
+  max-width: 600px;
+  min-width: 300px;
+  vertical-align: top;
+  margin-right: 40px;
+}
+
+.profile-txt {
+  display: inline-block;
+  width: 45%;
+  max-width: 700px;
+  min-width: 300px;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.myName h3 {
+  margin: 5px 0 20px 0;
+}
+
+.mySkill p {
+  font-size: 9px;
+  display: inline-block;
+  width: 45%;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+
+/*contact-wrapper*/
+.contact-wrapper {
+  margin-top: 10px;
+}
+
+.contact-wrapper .container {
+  border-top: solid 5px #2b2b2b;
+  border-bottom: solid 5px #2b2b2b;
+  background-color: #dcdcdc;
+  text-align: left;
+  padding: 40px 30px;
+}
+
+.contact-wrapper h2 {
+  vertical-align: top;
+  display: inline-block;
+  width: auto;
+  margin-right: 60px;
+}
+
+.contact-txt {
+  display: inline-block;
+  margin-left: 20px;
+  width: auto;
+}
+
+
+/*footer*/
+footer ul {
+  text-align: left;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0px 15px;
+  cursor : pointer;
+}
+
+footer li:hover {
+  opacity: 0.5;
+}
