@@ -33,10 +33,32 @@ p {
   margin: 0px 3px;
 }
 
+.fa {
+  color: #2b2b2b;
+}
+
+/*header*/
+header {
+  margin-top: 5px;
+  position: fixed;
+  right: 0;
+  padding: 10px;
+}
+
+header li {
+  display: block;
+  margin: 5px;
+  text-align: left;
+}
+
 
 /*heading-wrapper*/
 .heading-wrapper img{
   width: 100%;
+}
+
+.heading-wrapper .container {
+  padding-top: 10px;
 }
 
 .concept-txt {
@@ -251,4 +273,35 @@ p {
 
 .mywork:last-child {
   padding-left: 20px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+footer .back-arow {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 60px;
+  padding: 10px;
+}
+
+footer .next-arow {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 60px;
+  padding: 10px;
+}
+
+footer .fa {
+  cursor : pointer;
+}
+
+footer .fa:hover {
+  opacity: 0.5;
 }
