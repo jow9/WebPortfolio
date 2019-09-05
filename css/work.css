@@ -130,3 +130,94 @@ p {
 .childeNum-04 .colum-var-childe {
   width: 25%;
 }
+
+/*process-wrapper*/
+.processes {
+  width: 100%;
+  font-size: 0;/*要素同士をぴったりくっつけるための処理、不要な改行を消す*/
+  text-align: left;
+}
+
+.process {
+  display: inline-block;
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin-bottom: 2vw;
+  width: calc(50% - 1.0vw);
+  position: relative;
+}
+
+.pcocess-size100 {
+  width: 100%;
+}
+
+/*吹き出しデザイン*/
+.rightarow {
+  margin-right: 2.0vw;
+}
+
+.rightarow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent transparent #e6e6e6;
+  border-width: 8vh 0 8vh 2vw;
+  right: -1.9vw;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+.downarow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #e6e6e6 transparent transparent transparent;
+  border-width: 2vw 8vh 0 8vh;
+  bottom: -1.9vw;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+}
+
+.steps {
+  width: 100%;
+}
+
+.step {
+  display: inline-block;
+  width: 50%;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+.step img {
+  width: 100%;
+}
+
+.Img-wrapper {
+  width: 100%;
+}
+
+.Img-wrapper img {
+  width: 50%;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+/*okkey限定*/
+.steps-03 .step-01 {
+  width: 30%;
+}
+.steps-03 .step-02{
+  width: 30%;
+}
+.steps-03 .step-03{
+  width: 40%;
+}
