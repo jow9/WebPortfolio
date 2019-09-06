@@ -1,0 +1,27 @@
+.steps-03 .step p {
+  padding: 0 5px 0 15px;
+}
+
+.steps-03 .step-01 p {
+  position: relative;
+}
+
+.steps-03 .step-01 p::after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent transparent #2b2b2b;
+  border-width: 1vh 0 1vh 0.6vw;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  right: -1.5vw;
+}
+
+.steps-03 .step-02 h5 {
+  margin: 0px 3px;
+  padding: 0 5px 0 8px;
+  font-size: 16px;
+}
