@@ -1,0 +1,155 @@
+@media (max-width: 1000px) {
+  header {
+    margin: 0;
+    padding: 0px;
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  header ul {
+    display: inline-block;
+    width: 95%;
+    margin: 0;
+    padding: 15px 0 5px 0;
+    border-bottom: solid 5px #2b2b2b;
+    text-align: right;
+  }
+
+  header li {
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .basicInfo-txt {
+    width: 30%;
+  }
+
+  .basicInfo-txt li {
+    font-size: 9px;
+  }
+
+  footer {
+    margin: 0px;
+  }
+
+  footer .top-arow {
+    display: inline-block;
+    padding: 10px;
+    margin: 60px;
+  }
+
+  footer .back-arow, footer .next-arow{
+    position: static;
+    display: inline-block;
+  }
+
+  footer .next-arow{
+    float: right;
+  }
+
+  footer .back-arow{
+    float: left;
+  }
+}
+
+
+@media (max-width: 670px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  header ul {
+    display: inline-block;
+    width: 95%;
+    margin: 0;
+    padding: 15px 0 5px 0;
+    border-bottom: solid 5px #2b2b2b;
+    text-align: center;
+  }
+
+  .concept-txt {
+    width: 100%;
+  }
+
+  .basicInfo-txt {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 5px;
+    font-size: 9px;
+  }
+
+  .colum-row img, .colum-row .txt-wrapper {
+    width: 100%;
+  }
+
+  /*縦コラムの数に応じて幅を変更*/
+  .childeNum-02 .colum-var-childe {
+    width: 100%;
+  }
+
+  .childeNum-03 .colum-var-childe {
+    width: 100%;
+  }
+
+  .childeNum-04 .colum-var-childe {
+    width: 50%;
+  }
+
+  .process-var-wrapper {
+    flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+  .process {
+    width: 100%;
+    margin-bottom: 4vw;
+  }
+
+  .rightarow::after, .downarow::after {
+    border-color: #e6e6e6 transparent transparent transparent;
+    border-width: 4vw 8vw 0 8vw;
+    top: auto;
+    bottom: -3.8vw;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mywork {
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .mywork:first-child,.mywork:last-child {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  footer {
+    margin-bottom: 60px;
+  }
+
+  footer .top-arow {
+    margin: 30px;
+  }
+
+  footer .back-arow, footer .next-arow{
+    margin: 30px;
+  }
+}

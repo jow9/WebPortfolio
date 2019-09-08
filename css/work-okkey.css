@@ -1,27 +1,74 @@
+/*okkey限定*/
+.steps-03 .step-01 {
+  width: 30%;
+}
+.steps-03 .step-02{
+  width: 30%;
+}
+.steps-03 .step-03{
+  width: 40%;
+}
+
 .steps-03 .step p {
   padding: 0 5px 0 15px;
 }
 
-.steps-03 .step-01 p {
+.steps-03 .step-02 h5 {
   position: relative;
 }
 
-.steps-03 .step-01 p::after{
+.steps-03 .step-02 h5::before{
   content: "";
   width: 0;
   height: 0;
   position: absolute;
   border-style: solid;
   border-color: transparent transparent transparent #2b2b2b;
-  border-width: 1vh 0 1vh 0.6vw;
+  border-width: 0.6vw 0 0.6vw 0.6vw;
+  left: -1.6vw;
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%);
-  right: -1.5vw;
 }
 
 .steps-03 .step-02 h5 {
   margin: 0px 3px;
   padding: 0 5px 0 8px;
   font-size: 16px;
+}
+
+
+@media (max-width: 670px) {
+  .steps-03 .step-01 {
+    width: 100%;
+  }
+  .steps-03 .step-02{
+    width: 100%;
+  }
+  .steps-03 .step-03{
+    width: 100%;
+  }
+
+  .steps-03 .step-01{
+    position: relative;
+  }
+
+  .steps-03 .step-01::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+    border-color: #2b2b2b transparent transparent transparent;
+    border-width: 2vw 2vw 0 2vw;
+    top: auto;
+    bottom: -4.5vw;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .steps-03 .step-02 h5::before{
+    border-color: transparent transparent transparent transparent;
+  }
 }

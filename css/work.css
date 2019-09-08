@@ -80,7 +80,7 @@ header li {
 .concept-txt {
   float: left;
   width: 60%;
-  text-align: left;
+  text-align: justify;
 }
 
 .concept-txt h1 {
@@ -133,6 +133,7 @@ header li {
 .colum-row .txt-wrapper {
   display: inline-block;
   vertical-align: middle;
+  text-align: justify;
   width: 45%;
   min-width: 200px;
   max-width: 600px;
@@ -191,14 +192,11 @@ header li {
 }
 
 .process-var-wrapper {
+  display: block;
   display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-}
-
-.process-var-wrapper .process {
-  display: block;
   flex-direction: row;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -218,7 +216,7 @@ header li {
   height: 0;
   border-style: solid;
   border-color: transparent transparent transparent #e6e6e6;
-  border-width: 8vh 0 8vh 2vw;
+  border-width: 5vh 0 5vh 2vw;
   right: -1.9vw;
   top: 50%;
   bottom: 50%;
@@ -233,7 +231,7 @@ header li {
   height: 0;
   border-style: solid;
   border-color: #e6e6e6 transparent transparent transparent;
-  border-width: 2vw 8vh 0 8vh;
+  border-width: 2vw 5vh 0 5vh;
   bottom: -1.9vw;
   right: 50%;
   left: 50%;
@@ -282,18 +280,6 @@ header li {
   padding-right: 5px;
 }
 
-/*okkey限定*/
-.steps-03 .step-01 {
-  width: 30%;
-}
-.steps-03 .step-02{
-  width: 30%;
-}
-.steps-03 .step-03{
-  width: 40%;
-}
-
-
 /*mywork-wrapper*/
 .mywork-wrapper {
   font-size: 0;/*要素同士をぴったりくっつけるための処理、不要な改行を消す*/
@@ -321,20 +307,19 @@ footer {
   margin-bottom: 60px;
 }
 
-footer .back-arow {
+footer .back-arow, footer .next-arow{
   position: fixed;
   bottom: 0;
-  left: 0;
   margin: 60px;
   padding: 10px;
 }
 
+footer .back-arow {
+  left: 0;
+}
+
 footer .next-arow {
-  position: fixed;
-  bottom: 0;
   right: 0;
-  margin: 60px;
-  padding: 10px;
 }
 
 footer .fa {
